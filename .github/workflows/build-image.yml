@@ -43,6 +43,6 @@ jobs:
         context: .
         platforms: linux/amd64
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
-        # tags: ${{ secrets.DOCKER_USERNAME }}/awsbackup:latest
+        # tags: ${{ steps.meta.outputs.tags }}
+        tags: ${{ secrets.DOCKER_USERNAME }}/awsbackup:latest
 
