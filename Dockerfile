@@ -14,3 +14,6 @@ RUN apt update && \
       ./aws/install && \
       rm awscliv2.zip && \
       rm -rf ./aws
+
+WORKDIR /app
+COPY sqlite_backup2s3.sh ${WORKDIR}
